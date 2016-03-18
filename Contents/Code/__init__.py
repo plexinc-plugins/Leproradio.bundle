@@ -1,7 +1,7 @@
 ART = 'art-default.jpg'
 ICON = 'icon-default.png'
 NAME = 'Leproradio'
-STREAM_URL = 'http://leproradio.com/stream/mpeg.mp4'
+STREAM_URL = 'http://leproradio.com/stream/mpeg.mp3'
 
 ####################################################################################################
 def Start():
@@ -29,11 +29,11 @@ def CreateTrackObject(url, title, include_container=False):
 		items = [
 			MediaObject(
 				parts = [
-					PartObject(key=Callback(PlayAudio, url=url, ext='mp4'))
+					PartObject(key=Callback(PlayAudio, url=url, ext='mp3'))
 				],
-				container = 'f4v',
+				container = Container.MP3,
 				bitrate = 128,
-				audio_codec = AudioCodec.AAC,
+				audio_codec = AudioCodec.MP3,
 				audio_channels = 2
 			)
 		]
