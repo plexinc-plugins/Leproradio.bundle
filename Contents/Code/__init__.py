@@ -1,5 +1,5 @@
 ART = 'art-default.jpg'
-ICON = 'icon-default.png'
+ICON = 'icon-default.jpg'
 NAME = 'Leproradio'
 STREAM_URL = 'http://leproradio.com/stream/mpeg.mp3'
 
